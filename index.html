@@ -1,0 +1,48 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Course Selection and Teacher Assignment System</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Course Selection and Teacher Assignment System</h1>
+
+        <div id="course-selection">
+            <h2>Select Your Courses</h2>
+            <form id="selection-form">
+                <h3>Theory Courses</h3>
+                <div id="theory-courses" class="course-list"></div>
+                
+                <h3>Lab Courses</h3>
+                <div id="lab-courses" class="course-list"></div>
+                
+                <button type="submit">Submit Courses</button>
+            </form>
+        </div>
+
+        <div id="teacher-profiles">
+            <h2>Teacher Profiles</h2>
+            <div id="profiles-list"></div>
+        </div>
+
+        <div id="feedback-section" style="display:none;">
+            <h3>Submit Feedback</h3>
+            <form id="feedback-form">
+                <label for="teacher-id">Teacher ID:</label>
+                <input type="text" id="teacher-id" required>
+                <label for="rating">Rating (1-5):</label>
+                <input type="number" id="rating" min="1" max="5" required>
+                <label for="comments">Comments:</label>
+                <textarea id="comments" required></textarea>
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
